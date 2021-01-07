@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Mathematical side of an image</title>
+<meta charset="UTF-8">
+	<meta name="description" content="Images are part of our daily life, we often send them on social media without realising the mathematical beauty it has. Let us learn about the images with a mathematical perspective and share it with others.">
+  <meta name="keywords" content="Images, Mathematics, beauty">
+  <meta name="author" content="Y.Rohit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="icon" href="https://covidnmap.000webhostapp.com/rohit.jpg">
+	<style>
+td{
+	width:25vw;
+ overflow:auto;
+ text-align:center;
+	}
+	button{
+		font-size: 5vw;
+		}
+		</style>
+</head>
+<body style="font-family:serif;" id="parent">
+	<center><h1 style="color:gray;">A mathematical side of an Image</h1></center><hr>
+		<div style="margin-left:70%;">
+		<figure style="text-align:center; line-height:1em;">
+		<img src="https://covidnmap.000webhostapp.com/rohit.jpg" alt="author" style="border-radius:50%; border:1px solid black; width:15vw;"><figcaption>Author</figcaption></figure>
+		</div>
+		<div style="border-radius:15px; background:rgba(230,230,230,1); border:1px solid black; padding:3vw;">
+			<p style="line-height:25px; word-spacing:5px; font-size:16px;">
+				<center>Things to keep in mind</center><br />
+				<ul>
+					<li>Anyone(without any background in Math/Computer) can read this article.</li><br />
+					<li>Only integers are used, throughout the article.</li><br/>
+					<li>Any suggestion regarding corrections/modifications, is most welcomed.</li><br />
+					<li>Use Google Chrome Browser with version 81.0.4044.117 and above.</li>
+					<br /><li>Prefer Touchscreen devices.</li><br />
+					<li>Prefer mobile mode over desktop mode.</li><br />
+					<li>I encourage you to create your own example.</li>
+					</ul>
+			</div>
+			<br />
+				<h2>Share:</h2>
+				<table><tr><td>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fcovidnmap.000webhostapp.com%2Fmathematics_and_image.html&title=Mathematical%20side%20of%20an%20Image&summary=Images%20are%20part%20of%20our%20daily%20life%2C%20we%20often%20send%20them%20on%20social%20media%20without%20realising%20the%20mathematical%20beauty%20it%20has.%20Let%20us%20learn%20about%20the%20images%20with%20a%20mathematical%20perspective%20and%20share%20it%20with%20others." style="text-decoration:none;">
+<svg viewBox="0 0 100 100" style="width:15vw;">
+				<path d="M10 10 v80 h80 v-80 h-80" stroke="rgba(0,99,176,1)" stroke-width="8" fill="rgba(0,0,0,0)" />
+				<text x="20" y="78" fill="rgba(0,99,176,1)" style="font-size:80; font-weight:bold; font-family:sans-serif;">in</text>
+				</svg>
+    </a></td><td>
+	<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fcovidnmap.000webhostapp.com%2Fmathematics_and_image.html" style="text-decoration: none;">
+			<svg viewBox="0 0 100 100" style="width:15vw;">
+				<circle cx="50" cy="50" r="48" fill="rgba(41,83,150,1)" />
+				<text x="38" y="80" fill="white" style="font-size:70; font-weight:bold; font-family:sans-serif;">f</text>
+				</svg>
+			</a></td><td>
+<a href="whatsapp://send?text=https%3A%2F%2Fcovidnmap.000webhostapp.com%2Fmathematics_and_image.html%20Images%20are%20part%20of%20our%20daily%20life%2C%20we%20often%20send%20them%20on%20social%20media%20without%20realising%20the%20mathematical%20beauty%20it%20has.%20Let%20us%20learn%20about%20the%20images%20with%20a%20mathematical%20perspective%20and%20share%20it%20with%20others." style="text-decoration: none;"><img src="https://covidnmap.000webhostapp.com/whatsapp.png" alt="share on WhatsApp" style="width:15vw;">
+</a></td><td>
+<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcovidnmap.000webhostapp.com%2Fmathematics_and_image.html&text=Images%20are%20part%20of%20our%20daily%20life%2C%20we%20often%20send%20them%20on%20social%20media%20without%20realising%20the%20mathematical%20beauty%20it%20has.%20Let%20us%20learn%20about%20the%20images%20with%20a%20mathematical%20perspective%20and%20share%20it%20with%20others." style="text-decoration:none;">
+    <img src="https://covidnmap.000webhostapp.com/twitter.png" style="width:15vw;" alt="share on Twitter ">
+    </a></td></tr></table><hr>
+    <br />
+	<p style="word-spacing:5px; font-size:16px;">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="font-weight:bold; font-size:48px;">H</strong>ello, Rohit here! This page is created for the sake of record. We are not going to discuss complexities here, let them be for another day! I'll try my best to make my case as simple as possible. Whatever I'm going to discuss is already known and I'm not claiming that I know something, no one knows. You can think of it [this article] as <strong>an old wine in a new bottle</strong>! What we are going to discuss...?</p>
+<ul>
+<li>Small pinch of Mathematics</li>
+<li>Images</li>
+<li>Some codes</li>
+<li>Processing Image Data</li>
+<li>Extracting Image Data</li>
+</ul>
+<p style="word-spacing:5px; font-size:16px;">
+	Before we begin, I want to tell you: for the sake of simplicity, we'll only consider integer values throughout the article...<br />
+			Okay! first thing first, let us talk about the X-Y plane, a normal X-Y plane looks something like this...
+			<p>
+				<center><svg viewBox="0 0 100 100" style="width:55vw; padding:1vw; border:1px dotted black; background: lightgreen;">
+					<path d="M10 10 v80 h80 v-80 h-80" fill="gray" stroke="black" stroke-width="1" />
+<path d="M10 50 h80 M50 10 v80" stroke-width="1" stroke="black" />
+<path d="M80 50 v-20" stroke="blue" stroke-width="0.5" />
+<path d="M50 30 h30" stroke="red" stroke-width="0.5" />
+<circle cx="80" cy="30" r="2" fill="purple" stroke="purple" stroke-width="1" />
+<text x="51" y="51" fill="lightpink" style="font-size:6px;">(0,0)</text>
+<text x="70" y="27" fill="lightpink" style="font-size:6px;">(30,20)</text>
+<text x="85" y="48" fill="red" style="font-size:8px;">X+</text>
+<text x="50" y="18" fill="blue" style="font-size:8px;">Y+</text>
+<text x="12" y="48" fill="red" style="font-size:8px;">X-</text>
+<text x="50" y="87" fill="blue" style="font-size:8px;">Y-</text>
+					</svg><br/><pre>Vector graphics, Fig. 1(a), Source: Y. Rohit</pre></center>
+					<button id="anim" style="font-weight:bold; color:brown;">Click(+)</button><br /><br />
+					<div id="divA" style="width:300px; height:0; line-height:1em; overflow:auto; color:gray; background:rgba(150,190,50,1); color:purple; font-family:sans-serif; font-size:13px;"><p style="margin-top:50%; margin-left:50%; transform:translate(-50%,-50%);">
+Image in text form:
+&lt;path d="M10 10 v80 h80 v-80 h-80" fill="gray" stroke="black" stroke-width="1" /&gt;
+&lt;path d="M10 50 h80 M50 10 v80" stroke-width="1" stroke="black" /&gt;
+&lt;path d="M80 50 v-20" stroke="blue" stroke-width="0.5" /&gt;
+&lt;path d="M50 30 h30" stroke="red" stroke-width="0.5" /&gt;
+&lt;circle cx="80" cy="30" r="2" fill="purple" stroke="purple" stroke-width="1" /&gt;</p>
+</div>
+<p style="word-spacing:5px; font-size:16px;">
+	Where the measurements start from the center (0,0) [i.e. the sense of origin is in center], but when it comes to our computer screens, things are not the same! objects [virtual objects] are located from their top left corner, and it makes more sense to me, and I guess to you too! As it makes our calculation easy and to be more frank I would like to say hardware design of screen plays a significant role here. Let us have an X-Y plane, where measurements start from the top left corner.
+	</p>
+	<center><svg viewBox="0 0 100 100" style="width:55vw; padding:1vw; border:1px dotted black; background: lightgreen;">
+					<path d="M10 10 v80 h80 v-80 h-80" fill="gray" stroke="black" stroke-width="1" />
+<path d="M40 10 v20" stroke="blue" stroke-width="0.5" />
+<path d="M10 30 h30" stroke="red" stroke-width="0.5" />
+<circle cx="40" cy="30" r="2" fill="purple" stroke="purple" stroke-width="1" />
+<text x="7" y="7" fill="brown" style="font-size:6px;">(0,0)</text>
+<text x="43" y="33" fill="lightpink" style="font-size:6px;">(30,20)</text>
+<text x="80" y="18" fill="red" style="font-size:8px;">X+</text>
+<text x="12" y="88" fill="blue" style="font-size:8px;">Y+</text>
+<text x="60" y="85" fill="lightpink" style="font-size:6px;">(100,100)</text>
+					</svg><pre>Vector graphics, Fig. 1(b), Source: Y. Rohit</pre></center>
+					<button id="animB" style="font-weight:bold; color:brown;">Click(+)</button><br /><br />
+					<div id="divB" style="width:300px; height:0; line-height:1em; overflow:auto; background: rgba(150,190,50,1); color:purple; font-family:sans-serif; font-size:13px;"><p style="margin-top:50%; margin-left:50%; transform:translate(-50%,-50%);">
+					&lt;path d="M10 10 v80 h80 v-80 h-80" fill="gray" stroke="black" stroke-width="1" /&gt;
+&lt;path d="M40 10 v20" stroke="blue" stroke-width="0.5" /&gt;
+&lt;path d="M10 30 h30" stroke="red" stroke-width="0.5" /&gt;
+&lt;circle cx="40" cy="30" r="2" fill="purple" stroke="purple" stroke-width="1" /&gt;</p>
+					</div>
+					<p style="word-spacing:5px; font-size:16px;">
+						<strong><u>How we see, what we see:</u></strong> Let us talk about the screen, imagine if we want to produce brown <span><svg viewBox="0 0 100 100" style="width:3vw;"><path d="M0 0 v100 h100 v-100 h-100" fill="brown" /></svg></span> color on the screen, for say any specific location (x,y) representing an unique pixel at that point. Obviously it is hard to track a tiny pixel on screen, so for the sake of simplicity we are going to consider an square of sizable width and height as '1 pixel'. Now we know that we can create any color of visible spectrum [visible range of electromagnetic waves], using three primary colors <strong style="color:red;">Red</strong>, <strong style="color:blue;">Blue</strong> and <strong style="color:green;">green</strong>. let me create a game for you, below is that square of sizable width and height [Don't forget we are treating it as A TINY PIXEL], create brown color, using these 3 primary colors!
+<br />But before you begin, Note that:
+						</p>
+<ul><li>0 stands for lowest intensity of a primary color.</li>
+<li>255 stands for 100% intensity of a primary color.</li>
+<li>Using just these 3 parameters, you can create more than 15 million unique colors and shades.</li></ul>
+<hr>
+					<center><svg viewBox="0 0 100 100" style="width:20vw; background: rgba(100,250,200,1);" id="game">
+					</svg></center>
+					<p id="disp" style="color:black; font-size:15px; font-weight:bold;">
+						(RED, GREEN, BLUE) value:
+</p>
+					<center><label>Red: </label> <input type="range" max="255" min="0" value="100" id="inp1" style="width:65vw;" /><svg viewBox="0 0 100 100" style="width:5vw; background:rgba(100,0,0,1);" id="inpt1"></svg><br />
+					<br /><label>Green: </label><input type="range" max="255" min="0" value="250" id="inp2" style="width:65vw;" /><svg viewBox="0 0 100 100" style="width:5vw; background:rgba(0,250,0,1);" id="inpt2"></svg><br /><br />
+					<label>Blue: </label><input type="range" max="255" min="0" value="200" id="inp3" style="width:65vw;" /><svg viewBox="0 0 100 100" style="width:5vw; background:rgba(0,0,200,1);" id="inpt3"></svg><pre>Source: Y. Rohit</pre></center><hr>
+					<p style="word-spacing:5px; font-size:16px;">
+						<strong>Well, you should ask what about this number 255 !!!?</strong> If you notice for anyone of these three primary colors, our range starts from 0, and touches finish line at 255, overall we have 256 different levels. <strong>There is something special about 256, it is a power of 2</strong>, i.e. 2^8 = 256. Computer fetches this information in 8bits, so we have to consider 256 different values to represent each one of those! As you just saw, you can create almost any color on the screen at any point, using just these three primary colors!
+					<ul><li><strong><u>OKAY! So what about an image:</u></strong> Same goes with an Image, the variation of these three primary colors in X-Y plane produces a beautiful image, also there is 4th parameter which determines opacity at any specific location, well leave it, it is not something we are going dig here!</li></ul>
+<p style="word-spacing:5px; font-size:16px;">
+    You can think of an image as a set stuffed with so many integers each representing intensity of these three primary colors at any specific location, <strong>Obviously computer understands binary only, and therefore these numbers are represented by 0s and 1s, not as decimal numbers[to be more precise, 'integers'].</strong> Any way all I want you to do is, visualise image as an <strong style="color:blue;">array</strong> containing large, very large amount of numbers.
+			</p>		
+	<ul><li><strong><u>Images and their data</u></strong></li></ul>
+					<center><svg id="cvs" viewBox="0 0 100 100" style="border:1px solid black; background: black; width:250px">
+<path stroke-width="0.5" stroke="white" id="horp" />
+<circle r="4" fill="lightgreen" id="circle1" />
+</svg><pre>Vector graphics, 2(a), Source: Y. Rohit</pre></center>
+					<button id="animC" style="font-weight:bold; color:brown;">Click(+)</button><br /><br />
+					<div id="divC" style="width:300px; height:0; line-height:1em; overflow:auto; background:rgba(150,190,50,1); color:purple; font-family:sans-serif; font-size:13px;"><p style="margin-top:50%; margin-left:50%; transform:translate(-50%,-50%);">
+					var k = 2;
+function anm(){
+	var rnd3 = parseInt((Math.random()*300)+60);
+			var rnd1 = parseInt((Math.random()*300)+60);
+			var rnd2 = parseInt((Math.random()*300)+60);
+var d = new Date();
+	var s = d.getMilliseconds();
+	var snew = s/4;
+	if(snew > 247){
+	k += 4;
+	}
+	if(k > 105){
+		k = 2;
+		}
+				document.getElementById("circle1").setAttribute("cx" , snew);
+				document.getElementById("circle1").setAttribute("cy" , k);
+				document.getElementById("horp").setAttribute("d" , "M0 "+k+" h250 M"+snew+" 0 v250");
+				}
+				setInterval(anm,1);</p>
+					</div>
+					<p style="word-spacing:5px; font-size:16px;">
+		Observe the animation given above, treat moving ball as a moving pixel in realtime. If you notice, the ball changes color as it changes its location. Imagine an image which is hidden from top to bottom except at the point where the ball is located... <strong>Now you should be able to imagine that the ball actually represents the pixel by pixel variation of color in that image!</strong>
+		<ul><li><strong><u>Let us learn how to apply this understanding in real life scenario:</u></strong></li></ul>
+		For that let us first have a random image or you can choose your own by clicking <strong>choose file</strong><br /><br />
+		<input type="file" accept="image/*" id="file" style="font-size:5vw; background: red;" /><br /><br />
+		<center>
+			<img src="https://covidnmap.000webhostapp.com/wf.jpg" style="width:70vw; padding:4px;" alt="Sample image" id="img1">
+			</center>
+<center><pre>Image preview section</pre></center><p style="word-spacing:5px; font-size:16px;">
+			You may question my ability to pick random images, but for the moment deal with this dull image. We are viewing this image in XY plane, it has certain height and width, and it is made up of thousands of small pixels and each one of those may or may not have same color. Your device processes this image as pixel by pixel variation of colors[values of three primary colors at any specific point], and arranges them at their respective <strong>rows and columns in say m×n matrix, depending on their (x,y) coordinate [where m is width of that image and n is height of that image and measurement unit is obviously pixel]</strong>. In order to read this information, we need to replicate what our computer does!
+			<ul><li><strong><u>Click/Move your finger/drag your mouse over the image given below</u></strong></li></ul>
+			<button onclick="loc()" id="lok" style="color:brown; font-size:20px;">Lock Scrolling</button>
+			<script>
+			   var loc1 = 0;
+			function loc(){
+			    loc1++;
+			    var loc2 = loc1%2;
+			    if(loc2 == 1){
+		scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
+
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft, 
+
+  
+
+        // if any scroll is attempted, set this to the previous value 
+
+        window.onscroll = function() { 
+
+            window.scrollTo(scrollLeft, scrollTop); 
+
+        }
+	document.getElementById("lok").innerHTML = "Unlock Scrolling";
+			    }
+			    if(loc2 == 0){
+window.onscroll = function (){}
+	document.getElementById("lok").innerHTML = "Lock Scrolling";
+			    }
+			}  
+			</script>
+						<canvas id="panelA" style="position:fixed; top:0%; right:1px; border:1px solid black; display:none; background:black;"></canvas>
+						<canvas id="panelB" style="position:fixed; top:0%; right:1px; border:1px solid black; display:none;"></canvas>
+						<canvas id="panelC" style="position:fixed; top:0%; right:1px; border:1px solid black; display:none;"></canvas>
+						<canvas id="panel" style="position:fixed; top:0; right:1px; border:1px dotted white; display:none;"></canvas>
+						<div id="cdiv1"><pre style="position: relative; top:0; left:0;" id="cp1">Image Data</pre>
+<canvas id="cnvs1" style="padding:5px;"></canvas>
+</div>
+<center><pre>2(b), non-scalable rendered canvas image</pre></center>
+						<p style="word-spacing:5px; font-size:16px;">
+							As you can see [by moving your finger over the image given above], we are finally able to replicate 'the way in which computer fetches information that an image holds'. <strong>Three curves that you are having in a pop-up window is representing variation in intensity of three primary colors along the curve traced by your finger with projection along Y-axis.</strong> That is: We are ignoring the motion of your finger along Y-axis. <strong>I encourage you to create your own algorithm to consider motion in Y-axis and ignore that of in X-axis.</strong> Also if you are interested in considering motion in both X and Y directions, it takes a little bit of 'more head scratching', as things go 3 Dimensional, for that one has to consider <strong>webGL(graphics library)</strong>, a complex thing to deal with!
+							</p>
+<button id="animD" style="font-weight:bold; color:brown;">Click(+)</button><br /><br />
+					<div id="divD" style="width:300px; height:0; line-height:1em; overflow:auto; background: rgba(150,190,50,1); color:purple; font-family:sans-serif; font-size:13px;"><p>
+    cnvs1.addEventListener("touchstart" , function(ep){
+    	var xp = parseInt(ep.touches[0].pageX - cnvs1.offsetLeft);
+					var yp = parseInt(ep.touches[0].pageY - cnvs1.offsetTop);
+					var redp = cnvsa.getImageData(xp,yp,1,1).data[0];
+					var greenp = cnvsa.getImageData(xp,yp,1,1).data[1];
+					var bluep = cnvsa.getImageData(xp,yp,1,1).data[2];
+					
+					panelC.style.display = "block";
+					panel2C.clearRect(0,0,panel1.width,panel1.height);
+					panel2C.beginPath();
+					panel2C.moveTo(xp,panel1.height - bluep);
+					panelA.style.display = "block";
+					panel2A.clearRect(0,0,panel1.width,panel1.height);
+					panel2A.beginPath();
+					panel2A.moveTo(xp,panel1.height - redp);
+					panelB.style.display = "block";
+					panel2B.clearRect(0,0,panel1.width,panel1.height);
+					panel2B.beginPath();
+					panel2B.moveTo(xp,panel1.height - greenp);
+					
+    });
+
+cnvs1.addEventListener("touchmove" , function(e1){
+					var x1 = parseInt(e1.touches[0].pageX - cnvs1.offsetLeft);
+					var y1 = parseInt(e1.touches[0].pageY - cnvs1.offsetTop);
+					var red = cnvsa.getImageData(x1,y1,1,1).data[0];
+					var green = cnvsa.getImageData(x1,y1,1,1).data[1];
+					var blue = cnvsa.getImageData(x1,y1,1,1).data[2];
+					var redi = 255 - red;
+					var greeni = 255 - green;
+					var bluei = 255 - blue;
+					document.getElementById("cdiv1").style.background = "rgba("+red+","+green+","+blue+",1)";
+					document.getElementById("cp1").style.color = "rgba("+redi+","+greeni+","+bluei+",1)";
+					
+					document.getElementById("cp1").innerHTML = "(x,y)=("+x1+","+y1+")<br>(R,G,B)=("+red+","+green+","+blue+")";
+					panel2C.lineTo(x1, panel1.height - blue);
+					panel2C.strokeStyle = "skyblue";
+					panel2C.stroke();
+					panel2A.lineTo(x1,panel1.height - red);
+					panel2A.strokeStyle = "red";
+					panel2A.stroke();
+					panel2B.lineTo(x1,panel1.height - green);
+					panel2B.strokeStyle = "lightgreen";
+					panel2B.stroke();
+					panel1.style.display = "block";
+					panel2.clearRect(0,0,panel1.width,panel1.height);
+					panel2.beginPath();
+					panel2.moveTo(x1,0);
+					panel2.lineTo(x1,img1.height);
+					panel2.strokeStyle = "white";
+					panel2.stroke();
+					panel2.moveTo(0,y1);
+					panel2.lineTo(img1.width,y1);
+					panel2.strokeStyle = "white";
+					panel2.stroke();
+					panel2.beginPath();
+panel2.moveTo(20, img1.height);
+panel2.lineTo(20,img1.height - ((red/255)*100));
+panel2.lineTo(40,img1.height - ((red/255)*100));
+panel2.lineTo(40,img1.height);
+panel2.lineTo(20,img1.height);
+panel2.fillStyle = "red";
+					panel2.fill();
+					panel2.beginPath();
+					panel2.moveTo(60, img1.height);
+panel2.lineTo(60,img1.height - ((green/255)*100));
+panel2.lineTo(80,img1.height - ((green/255)*100));
+panel2.lineTo(80,img1.height);
+panel2.lineTo(60,img1.height);
+panel2.fillStyle = "lightgreen";
+					panel2.fill();
+					panel2.beginPath();
+					panel2.moveTo(100, img1.height);
+panel2.lineTo(100,img1.height - ((blue/255)*100));
+panel2.lineTo(120,img1.height - ((blue/255)*100));
+panel2.lineTo(120,img1.height);
+panel2.lineTo(100,img1.height);
+panel2.fillStyle = "skyblue";
+					panel2.fill();
+		cnvs1.addEventListener("touchend" , function(){
+						panel1.style.display = "none";
+						panelA.style.display = "none";
+						panelB.style.display = "none";
+						panelC.style.display = "none";
+						});
+					});
+					</p>
+</div>
+<ul><li><strong>Experimentation with the idea, developing small tools</strong></li></ul>
+<p style="word-spacing:5px; font-size:16px;">
+	Once you are comfortable with the idea of replication of data fetching process of an image, it is natural that you'll be going for possible experimentation with such ideas!
+	Some of the simple tools created by me are given below:
+	</p>
+	<ul><li><strong>Color inversion</strong></li></ul><button id="animciv" style="font-weight:bold; color:brown;">Invert Color</button><br /><br />
+	<canvas id="clrinv"></canvas>
+<center><pre>2(c), non-scalable rendered image</pre></center>
+	<div style="border-radius:15px; background:rgba(230,230,230,1); border:1px solid black; height:40vh; padding:3vw; overflow: auto;">
+var civ = 0;
+						document.getElementById("animciv").addEventListener("click" , function(){
+							 var invData = clrinv1.getImageData(0,0,img1.width,img1.height);
+							civ++;
+							var civ1 = civ%2;
+							if(civ1 == 1){
+								for(var civ2 = 0; civ2 < invData.data.length; civ2 += 4){
+									invData.data[civ2] = 255 - invData.data[civ2];
+									invData.data[civ2+1] = 255 - invData.data[civ2+1];
+									invData.data[civ2+2] = 255 - invData.data[civ2+2];
+									}
+		clrinv1.putImageData(invData,0,0);
+								}
+								if(civ1 == 0){
+								for(var civ2 = 0; civ2 < invData.data.length; civ2 += 4){
+									invData.data[civ2] = 255 - invData.data[civ2];
+									invData.data[civ2+1] = 255 - invData.data[civ2+1];
+									invData.data[civ2+2] = 255 - invData.data[civ2+2];
+									}
+		clrinv1.putImageData(invData,0,0);
+								}
+							});
+</div>
+<ul><li><strong>Black and White</strong></li></ul>
+<p style="word-spacing:5px; font-size:16px;">
+	Let us have a new image to test this tool, or you can simply change image from the <strong>Choose file section</strong>, given above.
+	</p>
+<center><img src="https://covidnmap.000webhostapp.com/opn.png" style="width:70vw; padding:4px;" alt="Sample image" id="imgbnw"></center>
+<center><pre>Image preview section</pre></center>
+<button id="animbaw" style="font-weight:bold; color:brown;">Get a black and white version</button><br /><br />
+	<canvas id="blacknwhite"></canvas>
+<center><pre>3(a), non-scalable rendered image</pre></center>
+	<div style="border-radius:15px; background:rgba(230,230,230,1); border:1px solid black; height:40vh; padding:3vw; overflow: auto;">
+var bnw = 0;
+						document.getElementById("animbaw").addEventListener("click" , function(){
+							 var bnwData = blacknwhite1.getImageData(0,0,img1.width,img1.height);
+							bnw++;
+							var bnw1 = bnw%2;
+							if(bnw1 == 1){
+								for(var bnw2 = 0; bnw2 < bnwData.data.length; bnw2 += 4){
+									bnwData.data[bnw2] = bnwData.data[bnw2];
+									bnwData.data[bnw2+1] = bnwData.data[bnw2];
+									bnwData.data[bnw2+2] = bnwData.data[bnw2];
+									}
+	blacknwhite1.putImageData(bnwData,0,0);
+								}
+								if(bnw1 == 0){
+blacknwhite1.drawImage(img1,0,0,img1.width,img1.height);
+								}
+							});
+</div>
+
+<script>
+	window.onload = function (){
+		var dis = document.getElementById("disp");
+		var red = document.getElementById("inp1");
+		var green = document.getElementById("inp2");
+		var blue = document.getElementById("inp3");
+		var gme = document.getElementById("game");
+		dis.innerHTML = "(RED, GREEN, BLUE) value: ("+red.value+","+green.value+","+blue.value+")";
+		red.addEventListener("input" , goA);
+		function goA(){
+			dis.innerHTML = "(RED, GREEN, BLUE) value: ("+red.value+","+green.value+","+blue.value+")";
+			gme.style.background = " rgba("+red.value+","+green.value+","+blue.value+",1)";
+			document.getElementById("inpt1").style.background = "rgba("+red.value+", 0,0,1)";
+			}
+			green.addEventListener("input" , goB);
+		function goB(){
+			dis.innerHTML = "(RED, GREEN, BLUE) value: ("+red.value+","+green.value+","+blue.value+")";
+			gme.style.background = " rgba("+red.value+","+green.value+","+blue.value+",1)";
+			document.getElementById("inpt2").style.background = "rgba(0,"+green.value+", 0,1)";
+			}
+			blue.addEventListener("input" , goC);
+		function goC(){
+			dis.innerHTML = "(RED, GREEN, BLUE) value: ("+red.value+","+green.value+","+blue.value+")";
+			gme.style.background = " rgba("+red.value+","+green.value+","+blue.value+",1)";
+			document.getElementById("inpt3").style.background = "rgba(0,0,"+blue.value+",1)";
+			}
+			var k = 2;
+function anm(){
+	var rnd3 = parseInt((Math.random()*300)+60);
+			var rnd1 = parseInt((Math.random()*300)+60);
+			var rnd2 = parseInt((Math.random()*300)+60);
+var d = new Date();
+	var s = d.getMilliseconds();
+	var snew = s/4;
+	if(snew > 247){
+	k += 4;
+	}
+	if(k > 105){
+		k = 2;
+		}
+				document.getElementById("circle1").setAttribute("cx" , snew);
+				document.getElementById("circle1").setAttribute("cy" , k);
+				document.getElementById("circle1").setAttribute("fill" , "rgba("+rnd3+","+rnd2+","+rnd1+",1)");
+				document.getElementById("horp").setAttribute("d" , "M0 "+k+" h250 M"+snew+" 0 v250");
+				}
+				setInterval(anm,1);
+				
+				
+				var cnvs1 = document.getElementById("cnvs1");
+				var panel1 = document.getElementById("panel");
+				var panelA = document.getElementById("panelA");
+				var panelB = document.getElementById("panelB");
+				var panelC = document.getElementById("panelC");
+				var clrinv = document.getElementById("clrinv");
+				var blacknwhite = document.getElementById("blacknwhite");
+				var img1 = document.getElementById("img1");
+				var imgbnw = document.getElementById("imgbnw");
+				var uload = document.getElementById("file");
+				uload.addEventListener("change" , function(){
+					if(uload.files && uload.files[0]){
+						var fle1 = URL.createObjectURL(uload.files[0]);
+						img1.setAttribute("src" , fle1);
+						imgbnw.setAttribute("src" , fle1);
+						img1.onload = function(){
+							cnvsa = cnvs1.getContext("2d");
+				cnvs1.width = img1.width;
+				cnvs1.height = img1.height;
+				clrinv.width = img1.width;
+				clrinv.height = img1.height;
+				blacknwhite.width = img1.width;
+				blacknwhite.height = img1.height;
+				panel1.width = img1.width;
+				if(img1.height >= 255){
+				panel1.height = img1.height;
+				}
+				if(img1.height < 255){
+					panel1.height = 255;
+					}
+				panelA.width = img1.width;
+				if(img1.height >= 255){
+				panelA.height = img1.height;
+				}
+				if(img1.height < 255){
+					panelA.height = 255;
+					}
+				panelB.width = img1.width;
+				if(img1.height >= 255){
+				panelB.height = img1.height;
+				}
+				if(img1.height < 255){
+					panelB.height = 255;
+					}
+				panelC.width = img1.width;
+				if(img1.height >= 255){
+				panelC.height = img1.height;
+				}
+				if(img1.height < 255){
+					panelC.height = 255;
+					}
+				cnvsa.drawImage(img1,0,0,img1.width,img1.height);
+		clrinv1.drawImage(img1,0,0,img1.width,img1.height);
+		blacknwhite1.drawImage(img1,0,0,img1.width,img1.height);
+						}
+						}
+					});
+				
+				var cnvsa = cnvs1.getContext("2d");
+				var panel2 = panel1.getContext("2d");
+				var panel2A = panelA.getContext("2d");
+				var panel2B = panelB.getContext("2d");
+				var panel2C = panelC.getContext("2d");
+				var clrinv1 = clrinv.getContext("2d");
+				var blacknwhite1 = blacknwhite.getContext("2d");
+cnvs1.width = img1.width;
+				cnvs1.height = img1.height;
+				clrinv.width = img1.width;
+				clrinv.height = img1.height;
+				blacknwhite.width = imgbnw.width;
+				blacknwhite.height = imgbnw.height;
+				panel1.width = img1.width;
+				if(img1.height >= 255){
+				panel1.height = img1.height;
+				}
+				if(img1.height < 255){
+					panel1.height = 255;
+					}
+				panelA.width = img1.width;
+				if(img1.height >= 255){
+				panelA.height = img1.height;
+				}
+				if(img1.height < 255){
+					panelA.height = 255;
+					}
+				panelB.width = img1.width;
+				if(img1.height >= 255){
+				panelB.height = img1.height;
+				}
+				if(img1.height < 255){
+					panelB.height = 255;
+					}
+				panelC.width = img1.width;
+				if(img1.height >= 255){
+				panelC.height = img1.height;
+				}
+				if(img1.height < 255){
+					panelC.height = 255;
+					}
+				cnvsa.drawImage(img1,0,0,img1.width,img1.height);
+		clrinv1.drawImage(img1,0,0,img1.width,img1.height);
+blacknwhite1.drawImage(imgbnw,0,0,imgbnw.width,imgbnw.height);
+    cnvs1.addEventListener("touchstart" , function(ep){
+    	var xp = parseInt(ep.touches[0].pageX - cnvs1.offsetLeft);
+					var yp = parseInt(ep.touches[0].pageY - cnvs1.offsetTop);
+					var redp = cnvsa.getImageData(xp,yp,1,1).data[0];
+					var greenp = cnvsa.getImageData(xp,yp,1,1).data[1];
+					var bluep = cnvsa.getImageData(xp,yp,1,1).data[2];
+					
+					panelC.style.display = "block";
+					panel2C.clearRect(0,0,panel1.width,panel1.height);
+					panel2C.beginPath();
+					panel2C.moveTo(xp,panel1.height - bluep);
+					panelA.style.display = "block";
+					panel2A.clearRect(0,0,panel1.width,panel1.height);
+					panel2A.beginPath();
+					panel2A.moveTo(xp,panel1.height - redp);
+					panelB.style.display = "block";
+					panel2B.clearRect(0,0,panel1.width,panel1.height);
+					panel2B.beginPath();
+					panel2B.moveTo(xp,panel1.height - greenp);
+					
+    });
+
+cnvs1.addEventListener("touchmove" , function(e1){
+					var x1 = parseInt(e1.touches[0].pageX - cnvs1.offsetLeft);
+					var y1 = parseInt(e1.touches[0].pageY - cnvs1.offsetTop);
+					var red = cnvsa.getImageData(x1,y1,1,1).data[0];
+					var green = cnvsa.getImageData(x1,y1,1,1).data[1];
+					var blue = cnvsa.getImageData(x1,y1,1,1).data[2];
+					var redi = 255 - red;
+					var greeni = 255 - green;
+					var bluei = 255 - blue;
+					document.getElementById("cdiv1").style.background = "rgba("+red+","+green+","+blue+",1)";
+					document.getElementById("cp1").style.color = "rgba("+redi+","+greeni+","+bluei+",1)";
+					
+					document.getElementById("cp1").innerHTML = "(x,y)=("+x1+","+y1+")<br>(R,G,B)=("+red+","+green+","+blue+")";
+					panel2C.lineTo(x1, panel1.height - blue);
+					panel2C.strokeStyle = "skyblue";
+					panel2C.stroke();
+					panel2A.lineTo(x1,panel1.height - red);
+					panel2A.strokeStyle = "red";
+					panel2A.stroke();
+					panel2B.lineTo(x1,panel1.height - green);
+					panel2B.strokeStyle = "lightgreen";
+					panel2B.stroke();
+					panel1.style.display = "block";
+					panel2.clearRect(0,0,panel1.width,panel1.height);
+					panel2.beginPath();
+					panel2.moveTo(x1,0);
+					panel2.lineTo(x1,img1.height);
+					panel2.strokeStyle = "white";
+					panel2.stroke();
+					panel2.moveTo(0,y1);
+					panel2.lineTo(img1.width,y1);
+					panel2.strokeStyle = "white";
+					panel2.stroke();
+					panel2.beginPath();
+panel2.moveTo(20, img1.height);
+panel2.lineTo(20,img1.height - ((red/255)*100));
+panel2.lineTo(40,img1.height - ((red/255)*100));
+panel2.lineTo(40,img1.height);
+panel2.lineTo(20,img1.height);
+panel2.fillStyle = "red";
+					panel2.fill();
+					panel2.beginPath();
+					panel2.moveTo(60, img1.height);
+panel2.lineTo(60,img1.height - ((green/255)*100));
+panel2.lineTo(80,img1.height - ((green/255)*100));
+panel2.lineTo(80,img1.height);
+panel2.lineTo(60,img1.height);
+panel2.fillStyle = "lightgreen";
+					panel2.fill();
+					panel2.beginPath();
+					panel2.moveTo(100, img1.height);
+panel2.lineTo(100,img1.height - ((blue/255)*100));
+panel2.lineTo(120,img1.height - ((blue/255)*100));
+panel2.lineTo(120,img1.height);
+panel2.lineTo(100,img1.height);
+panel2.fillStyle = "skyblue";
+					panel2.fill();
+		cnvs1.addEventListener("touchend" , function(){
+						panel1.style.display = "none";
+						panelA.style.display = "none";
+						panelB.style.display = "none";
+						panelC.style.display = "none";
+						});
+					});
+					
+				cnvs1.addEventListener("click" , function(e1){
+					var x1 = parseInt(e1.pageX - cnvs1.offsetLeft);
+					var y1 = parseInt(e1.pageY - cnvs1.offsetTop);
+					var red = cnvsa.getImageData(x1,y1,1,1).data[0];
+					var green = cnvsa.getImageData(x1,y1,1,1).data[1];
+					var blue = cnvsa.getImageData(x1,y1,1,1).data[2];
+					var redi = 255 - red;
+					var greeni = 255 - green;
+					var bluei = 255 - blue;
+					document.getElementById("cdiv1").style.background = "rgba("+red+","+green+","+blue+",1)";
+					document.getElementById("cp1").style.color = "rgba("+redi+","+greeni+","+bluei+",1)";
+					
+					document.getElementById("cp1").innerHTML = "(x,y)=("+x1+","+y1+")<br>(R,G,B)=("+red+","+green+","+blue+")";
+					panel1.style.display = "block";
+					panel2.clearRect(0,0,img1.width,img1.height);
+					panel2.beginPath();
+					panel2.moveTo(x1,0);
+					panel2.lineTo(x1,img1.height);
+					panel2.strokeStyle = "white";
+					panel2.stroke();
+					panel2.moveTo(0,y1);
+					panel2.lineTo(img1.width,y1);
+					panel2.strokeStyle = "white";
+					panel2.stroke();
+					panel2.beginPath();
+panel2.moveTo(20, img1.height);
+panel2.lineTo(20,img1.height - ((red/255)*100));
+panel2.lineTo(40,img1.height - ((red/255)*100));
+panel2.lineTo(40,img1.height);
+panel2.lineTo(20,img1.height);
+panel2.fillStyle = "red";
+					panel2.fill();
+					panel2.beginPath();
+					panel2.moveTo(60, img1.height);
+panel2.lineTo(60,img1.height - ((green/255)*100));
+panel2.lineTo(80,img1.height - ((green/255)*100));
+panel2.lineTo(80,img1.height);
+panel2.lineTo(60,img1.height);
+panel2.fillStyle = "lightgreen";
+					panel2.fill();
+					panel2.beginPath();
+					panel2.moveTo(100, img1.height);
+panel2.lineTo(100,img1.height - ((blue/255)*100));
+panel2.lineTo(120,img1.height - ((blue/255)*100));
+panel2.lineTo(120,img1.height);
+panel2.lineTo(100,img1.height);
+panel2.fillStyle = "skyblue";
+					panel2.fill();
+					panelC.style.display = "block";
+					panelB.style.display = "block";
+					panelA.style.display = "block";
+   cnvs1.addEventListener("mouseout" , function(){
+						panel1.style.display = "none";
+						panelA.style.display = "none";
+						panelB.style.display = "none";
+						panelC.style.display = "none";
+						});
+					});
+					
+					    cnvs1.addEventListener("mouseenter" , function(ep1){
+    	var xp = parseInt(ep1.touches[0].pageX - cnvs1.offsetLeft);
+					var yp = parseInt(ep1.touches[0].pageY - cnvs1.offsetTop);
+					var redp = cnvsa.getImageData(xp,yp,1,1).data[0];
+					var greenp = cnvsa.getImageData(xp,yp,1,1).data[1];
+					var bluep = cnvsa.getImageData(xp,yp,1,1).data[2];
+					
+					panelC.style.display = "block";
+					panel2C.clearRect(0,0,panel1.width,panel1.height);
+					panel2C.beginPath();
+					panel2C.moveTo(xp,panel1.height - bluep);
+					panelA.style.display = "block";
+					panel2A.clearRect(0,0,panel1.width,panel1.height);
+					panel2A.beginPath();
+					panel2A.moveTo(xp,panel1.height - redp);
+					panelB.style.display = "block";
+					panel2B.clearRect(0,0,panel1.width,panel1.height);
+					panel2B.beginPath();
+					panel2B.moveTo(xp,panel1.height - greenp);
+					
+    });
+					cnvs1.addEventListener("mousemove" , function(e1){
+					var x1 = parseInt(e1.touches[0].pageX - cnvs1.offsetLeft);
+					var y1 = parseInt(e1.touches[0].pageY - cnvs1.offsetTop);
+					var red = cnvsa.getImageData(x1,y1,1,1).data[0];
+					var green = cnvsa.getImageData(x1,y1,1,1).data[1];
+					var blue = cnvsa.getImageData(x1,y1,1,1).data[2];
+					var redi = 255 - red;
+					var greeni = 255 - green;
+					var bluei = 255 - blue;
+					document.getElementById("cdiv1").style.background = "rgba("+red+","+green+","+blue+",1)";
+					document.getElementById("cp1").style.color = "rgba("+redi+","+greeni+","+bluei+",1)";
+					
+					document.getElementById("cp1").innerHTML = "(x,y)=("+x1+","+y1+")<br>(R,G,B)=("+red+","+green+","+blue+")";
+					panel2C.lineTo(x1, panel1.height - blue);
+					panel2C.strokeStyle = "skyblue";
+					panel2C.stroke();
+					panel2A.lineTo(x1,panel1.height - red);
+					panel2A.strokeStyle = "red";
+					panel2A.stroke();
+					panel2B.lineTo(x1,panel1.height - green);
+					panel2B.strokeStyle = "lightgreen";
+					panel2B.stroke();
+					panel1.style.display = "block";
+					panel2.clearRect(0,0,panel1.width,panel1.height);
+					panel2.beginPath();
+					panel2.moveTo(x1,0);
+					panel2.lineTo(x1,img1.height);
+					panel2.strokeStyle = "white";
+					panel2.stroke();
+					panel2.moveTo(0,y1);
+					panel2.lineTo(img1.width,y1);
+					panel2.strokeStyle = "white";
+					panel2.stroke();
+					panel2.beginPath();
+panel2.moveTo(20, img1.height);
+panel2.lineTo(20,img1.height - ((red/255)*100));
+panel2.lineTo(40,img1.height - ((red/255)*100));
+panel2.lineTo(40,img1.height);
+panel2.lineTo(20,img1.height);
+panel2.fillStyle = "red";
+					panel2.fill();
+					panel2.beginPath();
+					panel2.moveTo(60, img1.height);
+panel2.lineTo(60,img1.height - ((green/255)*100));
+panel2.lineTo(80,img1.height - ((green/255)*100));
+panel2.lineTo(80,img1.height);
+panel2.lineTo(60,img1.height);
+panel2.fillStyle = "lightgreen";
+					panel2.fill();
+					panel2.beginPath();
+					panel2.moveTo(100, img1.height);
+panel2.lineTo(100,img1.height - ((blue/255)*100));
+panel2.lineTo(120,img1.height - ((blue/255)*100));
+panel2.lineTo(120,img1.height);
+panel2.lineTo(100,img1.height);
+panel2.fillStyle = "skyblue";
+					panel2.fill();
+		cnvs1.addEventListener("mouseleave" , function(){
+						panel1.style.display = "none";
+						panelA.style.display = "none";
+						panelB.style.display = "none";
+						panelC.style.display = "none";
+						});
+					});
+					
+				
+				
+				var inrw = window.innerWidth;
+				var inrh = window.innerHeight;
+				if(inrw/inrh < 1){
+					document.body.style.lineHeight = "6vh";
+					console.log("1a");
+					}
+					if(inrw/inrh > 1){
+					document.body.style.lineHeight = "6vw";
+					console.log("1b");
+					}
+					window.onresize = function(){
+						var inrw = window.innerWidth;
+				var inrh = window.innerHeight;
+				if(inrw/inrh < 1){
+					document.body.style.lineHeight = "6vh";
+					console.log("1a");
+					}
+					if(inrw/inrh > 1){
+					document.body.style.lineHeight = "6vw";
+					console.log("1b");
+					}
+						}
+						var civ = 0;
+						document.getElementById("animciv").addEventListener("click" , function(){
+							 var invData = clrinv1.getImageData(0,0,img1.width,img1.height);
+							civ++;
+							var civ1 = civ%2;
+							if(civ1 == 1){
+								for(var civ2 = 0; civ2 < invData.data.length; civ2 += 4){
+									invData.data[civ2] = 255 - invData.data[civ2];
+									invData.data[civ2+1] = 255 - invData.data[civ2+1];
+									invData.data[civ2+2] = 255 - invData.data[civ2+2];
+									}
+		clrinv1.putImageData(invData,0,0);
+								}
+								if(civ1 == 0){
+								for(var civ2 = 0; civ2 < invData.data.length; civ2 += 4){
+									invData.data[civ2] = 255 - invData.data[civ2];
+									invData.data[civ2+1] = 255 - invData.data[civ2+1];
+									invData.data[civ2+2] = 255 - invData.data[civ2+2];
+									}
+		clrinv1.putImageData(invData,0,0);
+								}
+							});
+							var bnw = 0;
+						document.getElementById("animbaw").addEventListener("click" , function(){
+							 var bnwData = blacknwhite1.getImageData(0,0,img1.width,img1.height);
+							bnw++;
+							var bnw1 = bnw%2;
+							if(bnw1 == 1){
+								for(var bnw2 = 0; bnw2 < bnwData.data.length; bnw2 += 4){
+									bnwData.data[bnw2] = bnwData.data[bnw2];
+									bnwData.data[bnw2+1] = bnwData.data[bnw2];
+									bnwData.data[bnw2+2] = bnwData.data[bnw2];
+									}
+	blacknwhite1.putImageData(bnwData,0,0);
+								}
+								if(bnw1 == 0){
+blacknwhite1.drawImage(imgbnw,0,0,imgbnw.width,imgbnw.height);
+								}
+							});
+							
+							
+							
+							
+		}
+	</script>
+	<script>
+				var animx = 0;
+				var anim2 = 0;
+				document.getElementById("anim").addEventListener("click" , perform);
+				function perform(){
+					anim2++;
+					anim3 = anim2%2;
+				var fram1 = setInterval(fram,1);
+				function fram(){
+						if(anim3 == 1){
+							animx++;
+							
+							document.getElementById("divA").style.height = animx+"px";
+							if(animx >= 150){
+				clearInterval(fram1);
+				document.getElementById("anim").innerHTML = "Click(-)";
+						}
+							}
+							if(anim3 == 0){
+							animx--;
+							document.getElementById("divA").style.height = animx+"px";
+							if(animx <= 0){
+						clearInterval(fram1);
+						document.getElementById("anim").innerHTML = "Click(+)";
+						}
+						}
+						
+						
+					}
+					}
+					var animxB = 0;
+				var anim2B = 0;
+				document.getElementById("animB").addEventListener("click" , performB);
+				function performB(){
+					anim2B++;
+					anim3B = anim2B%2;
+				var fram1B = setInterval(framB,1);
+				function framB(){
+						if(anim3B == 1){
+							animxB++;
+							
+							document.getElementById("divB").style.height = animxB+"px";
+							if(animxB >= 150){
+				clearInterval(fram1B);
+				document.getElementById("animB").innerHTML = "Click(-)";
+						}
+							}
+							if(anim3B == 0){
+							animxB--;
+							
+							document.getElementById("divB").style.height = animxB+"px";
+							if(animxB <= 0){
+						clearInterval(fram1B);
+						document.getElementById("animB").innerHTML = "Click(+)";
+						}
+						}
+						
+						
+					}
+					}
+					var animxC = 0;
+				var anim2C = 0;
+				document.getElementById("animC").addEventListener("click" , performC);
+				function performC(){
+					anim2C++;
+					anim3C = anim2C%2;
+				var fram1C = setInterval(framC,1);
+				function framC(){
+						if(anim3C == 1){
+							animxC++;
+							
+							document.getElementById("divC").style.height = animxC+"px";
+							if(animxC >= 150){
+				clearInterval(fram1C);
+				document.getElementById("animC").innerHTML = "Click(-)";
+						}
+							}
+							if(anim3C == 0){
+							animxC--;
+							
+							document.getElementById("divC").style.height = animxC+"px";
+							if(animxC <= 0){
+						clearInterval(fram1C);
+						document.getElementById("animC").innerHTML = "Click(+)";
+						}
+						}
+						
+						
+					}
+					}
+					var animxD = 0;
+				var anim2D = 0;
+				document.getElementById("animD").addEventListener("click" , performD);
+				function performD(){
+					anim2D++;
+					anim3D = anim2D%2;
+				var fram1D = setInterval(framD,1);
+				function framD(){
+						if(anim3D == 1){
+							animxD++;
+							
+							document.getElementById("divD").style.height = animxD+"px";
+							if(animxD >= 150){
+				clearInterval(fram1D);
+				document.getElementById("animD").innerHTML = "Click(-)";
+						}
+							}
+							if(anim3D == 0){
+							animxD--;
+							
+							document.getElementById("divD").style.height = animxD+"px";
+							if(animxD <= 0){
+						clearInterval(fram1D);
+						document.getElementById("animD").innerHTML = "Click(+)";
+						}
+						}
+						
+						
+					}
+					}
+		</script>
+</body>
+</html>
